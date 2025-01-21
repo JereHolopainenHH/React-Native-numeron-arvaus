@@ -21,6 +21,7 @@ export default function App() {
             Alert.alert(`You guessed the number in ${guessCount} tries`);
             setGuessCount(0);
             setRandomNumber(generateRandomNumber());
+            setText('Guess a number between 1-100');
         } else if (guess > randomNumber) {
             setText(`Your guess ${guess} is too high`);
         } else {
